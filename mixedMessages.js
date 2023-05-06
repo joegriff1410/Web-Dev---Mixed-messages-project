@@ -34,3 +34,13 @@ const senecaArray = [    "It is not that we have a short time to live, but that 
 "The whole future lies in uncertainty: live immediately.",
 "It is not that things are difficult that we do not dare, it is because we do not dare that they are difficult.",
 "We suffer more often in imagination than in reality."]
+
+
+const randomMessage = array => {
+    let randomIndex = Math.floor(Math.random() * array.length);
+    return array[randomIndex];
+}
+
+console.log(marcus + randomMessage(marcusArray));
+console.log(epectitus + randomMessage(epectitusArray));
+console.log(seneca + randomMessage(senecaArray));
